@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>click to change star color</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="star1"><i class="fa-solid fa-star"></i></div>
+      <div class="star2"><i class="fa-solid fa-star"></i></div>
+      <div class="star3"><i class="fa-solid fa-star"></i></div>
+      <div class="star4"><i class="fa-solid fa-star"></i></div>
+      <div class="star5"><i class="fa-solid fa-star"></i></div>
+    </div>
+    <div class="count">
+      <div class="rating1">
+        <!-- <h3>Rating :- 1</h3> -->
+        <h3></h3>
+      </div>
+      <div class="rating2">
+        <h3></h3>
+        <!-- <h3>Rating :- 2</h3> -->
+      </div>
+      <div class="rating3">
+        <h3></h3>
+        <!-- <h3>Rating :- 3</h3> -->
+      </div>
+      <div class="rating4">
+        <h3></h3>
+        <!-- <h3>Rating :- 4</h3> -->
+      </div>
+      <div class="rating5">
+        <h3></h3>
+        <!-- <h3>Rating :- 5</h3> -->
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $(".star1").click(function () {
+          $(".star1 > i").css("color", "yellow");
+          // $('.rating1').css('display','block');
+          // $('.rating1').html('<h3>Rating :- 1</h3>');
+          $(".rating1>h3").text("Rating :- 1⭐");
+        });
+        $(".star2").click(function () {
+          $(".star1 > i").css("color", "yellow");
+          $(".star2 > i").css("color", "yellow");
+          // $('.rating2').css('display','block');
+          // $('.rating2').html('<h3>Rating :- 2</h3>');
+          $(".rating2>h3").text("Rating :- 2⭐");
+        });
+        $(".star3").click(function () {
+          $(".star1 > i").css("color", "yellow");
+          $(".star2 > i").css("color", "yellow");
+          $(".star3 > i").css("color", "yellow");
+          // $('.rating3').css('display','block');
+          // $('.rating3').html('<h3>Rating :- 3</h3>');
+          $(".rating3>h3").text("Rating :- 3⭐");
+        });
+        $(".star4").click(function () {
+          $(".star1 > i").css("color", "yellow");
+          $(".star2 > i").css("color", "yellow");
+          $(".star3 > i").css("color", "yellow");
+          $(".star4 > i").css("color", "yellow");
+          // $('.rating4').css('display','block');
+          // $('.rating4').html('<h3>Rating :- 4</h3>');
+          $(".rating4>h3").text("Rating :- 4⭐");
+        });
+        $(".star5").click(function () {
+          $(".star1 > i").css("color", "yellow");
+          $(".star2 > i").css("color", "yellow");
+          $(".star3 > i").css("color", "yellow");
+          $(".star4 > i").css("color", "yellow");
+          $(".star5 > i").css("color", "yellow");
+          // $('.rating5').css('display','block');
+          // $('.rating5').html('<h3>Rating :- 5</h3>');
+          $(".rating5>h3").text("Rating :- 5⭐");
+        });
+      });
+    </script>
+  </body>
+</html>
